@@ -1,9 +1,6 @@
 import { Icon } from "@iconify/react";
-import { useNavigate } from "react-router-dom";
 
 export function Onboarding() {
-	const navigate = useNavigate();
-
 	return (
 		<div className="flex flex-col h-full bg-gradient-to-b from-background via-[#1a1135] to-secondary/30 text-foreground overflow-hidden relative">
 			<div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -42,7 +39,7 @@ export function Onboarding() {
 							<div className="absolute inset-0 bg-gradient-to-tl from-accent/10 to-transparent rounded-full" />
 							<Icon
 								icon="solar:moon-stars-bold"
-								className="size-36 drop-shadow-2xl relative z-10 text-foreground"
+								className="size-36 drop-shadow-2xl relative z-10"
 							/>
 							<div className="absolute top-8 right-6 animate-pulse delay-200">
 								<Icon icon="solar:star-bold" className="size-5 text-accent" />
@@ -110,10 +107,7 @@ export function Onboarding() {
 				</div>
 			</div>
 			<div className="px-6 pb-8 space-y-3 relative z-10">
-				<button 
-					onClick={() => navigate('/')}
-					className="w-full py-4 px-6 bg-gradient-to-r from-primary via-secondary to-primary text-primary-foreground rounded-2xl font-semibold text-lg shadow-2xl shadow-primary/40 relative overflow-hidden"
-				>
+				<button className="w-full py-4 px-6 bg-gradient-to-r from-primary via-secondary to-primary text-primary-foreground rounded-2xl font-semibold text-lg shadow-2xl shadow-primary/40 relative overflow-hidden">
 					<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent blur-sm" />
 					Get Started
 				</button>

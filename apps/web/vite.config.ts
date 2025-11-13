@@ -10,4 +10,7 @@ export default defineConfig({
       '@sleep-tracker/shared': path.resolve(__dirname, '../../packages/shared/src'),
     },
   },
+  server: {
+    port: 3006,
+  },
 })

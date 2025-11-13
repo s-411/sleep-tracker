@@ -47,7 +47,30 @@ export default {
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
+      animationDelay: {
+        '0': '0ms',
+        '100': '100ms',
+        '200': '200ms',
+        '300': '300ms',
+        '400': '400ms',
+        '500': '500ms',
+        '600': '600ms',
+        '700': '700ms',
+        '800': '800ms',
+        '1000': '1000ms',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'delay': (value) => ({
+            'animation-delay': value,
+          }),
+        },
+        { values: theme('animationDelay') }
+      )
+    },
+  ],
 }
