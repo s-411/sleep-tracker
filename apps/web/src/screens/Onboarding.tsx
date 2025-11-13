@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 
 export function Onboarding() {
 	return (
-		<div className="flex flex-col h-full bg-gradient-to-b from-background via-[#1a1135] to-secondary/30 text-foreground overflow-hidden relative">
+		<div className="flex flex-col min-h-screen bg-gradient-to-b from-background via-[#1a1135] to-secondary/30 text-foreground overflow-hidden relative">
 			<div className="absolute inset-0 overflow-hidden pointer-events-none">
 				<div className="absolute top-[10%] left-[15%] size-32 bg-primary/20 rounded-full blur-3xl animate-pulse" />
 				<div className="absolute top-[25%] right-[10%] size-40 bg-accent/15 rounded-full blur-3xl animate-pulse delay-500" />
@@ -29,7 +29,7 @@ export function Onboarding() {
 				<div className="absolute bottom-[35%] right-[25%] size-24 bg-gradient-to-br from-accent/10 to-transparent rounded-full blur-xl animate-pulse delay-800" />
 				<div className="absolute top-[50%] right-[8%] size-16 bg-gradient-to-br from-secondary/10 to-transparent rounded-full blur-xl animate-pulse delay-600" />
 			</div>
-			<div className="flex-1 flex flex-col items-center justify-center px-6 pb-8 relative z-10">
+			<div className="flex-1 flex flex-col items-center justify-center px-6 pb-8 relative z-10 w-full max-w-sm mx-auto">
 				<div className="relative w-full max-w-sm mb-8">
 					<div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-secondary/30 to-accent/20 blur-3xl rounded-full animate-pulse" />
 					<div className="relative flex items-center justify-center">

@@ -4,25 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  background-color: hsl(var(--background));
+}
+
 :root {
-  --background: #201640;
-  --foreground: #EAE6F7;
-  --primary: #7C5CFF;
-  --primary-foreground: #FFFFFF;
-  --secondary: #5A46D6;
-  --secondary-foreground: #FFFFFF;
-  --muted: #6E647E;
-  --muted-foreground: #BDB4C9;
-  --accent: #2DE0C6;
-  --accent-foreground: #042927;
-  --destructive: #FF6B6B;
-  --card: #2b2052;
-  --card-foreground: #EAE6F7;
-  --popover: #191428;
-  --popover-foreground: #EAE6F7;
-  --border: #201640;
-  --input: #1d143b;
-  --ring: #8B5CF6;
+  --background: 263 56% 19%;
+  --foreground: 265 33% 92%;
+
+  --primary: 263 100% 68%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 262 55% 56%;
+  --secondary-foreground: 0 0% 100%;
+
+  --accent: 172 82% 52%;
+  --accent-foreground: 177 89% 14%;
+
+  --muted: 272 13% 46%;
+  --muted-foreground: 268 18% 76%;
+
+  --destructive: 0 100% 70%;
+  --destructive-foreground: 0 0% 100%;
+
+  --card: 265 41% 24%;
+  --card-foreground: 265 33% 92%;
+
+  --popover: 267 45% 12%;
+  --popover-foreground: 265 33% 92%;
+
+  --border: 263 56% 19%;
+  --input: 266 48% 15%;
+  --ring: 265 59% 63%;
 
   --font-sans: "Jost", system-ui, sans-serif;
   --font-heading: "Jost", system-ui, sans-serif;
@@ -38,10 +55,9 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--background);
-  color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-background text-foreground;
 }
 
 .scrollbar-hide {
