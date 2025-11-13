@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #201640;
+  --foreground: #EAE6F7;
+  --primary: #7C5CFF;
+  --primary-foreground: #FFFFFF;
+  --secondary: #5A46D6;
+  --secondary-foreground: #FFFFFF;
+  --muted: #6E647E;
+  --muted-foreground: #BDB4C9;
+  --accent: #2DE0C6;
+  --accent-foreground: #042927;
+  --destructive: #FF6B6B;
+  --card: #2b2052;
+  --card-foreground: #EAE6F7;
+  --popover: #191428;
+  --popover-foreground: #EAE6F7;
+  --border: #201640;
+  --input: #1d143b;
+  --ring: #8B5CF6;
+
+  --font-sans: "Jost", system-ui, sans-serif;
+  --font-heading: "Jost", system-ui, sans-serif;
+
+  --radius: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
